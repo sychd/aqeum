@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dsych-org/aqeum-web/auth": ["libs/aqeum-web/auth/src/index.ts"]
+      "@dsych-org/core-web/auth": ["libs/core-web/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

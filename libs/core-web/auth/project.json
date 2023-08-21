@@ -1,7 +1,7 @@
 {
-  "name": "aqeum-web-auth",
+  "name": "core-web-auth",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/aqeum-web/auth/src",
+  "sourceRoot": "libs/core-web/auth/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,14 +9,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/aqeum-web/auth/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/core-web/auth/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/aqeum-web/auth/jest.config.ts",
+        "jestConfig": "libs/core-web/auth/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
