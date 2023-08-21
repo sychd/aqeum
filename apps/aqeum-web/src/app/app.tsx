@@ -6,7 +6,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="platform-web" />
+      <NxWelcome title="aqeum-web" />
     </div>
   );
 }
