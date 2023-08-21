@@ -1,5 +1,5 @@
 {
-  "name": "@dsych/source",
+  "name": "@dsych-org/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
@@ -8,7 +8,8 @@
     "@swc/helpers": "~0.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",

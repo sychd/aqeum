@@ -1,14 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import { AuthPanel } from '@dsych-org/aqeum-web/auth';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="aqeum-web" />
-    </div>
-  );
+  return <AuthPanel />;
 }
 
 export default App;
