@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@dsych-org/aqeum-web/feature/home": [
+        "libs/aqeum-web/feature/home/src/index.ts"
+      ],
+      "@dsych-org/aqeum-web/feature/profile": [
+        "libs/aqeum-web/feature/profile/src/index.ts"
+      ],
       "@dsych-org/shared-web/auth": ["libs/shared-web/auth/src/index.ts"]
     }
   },
