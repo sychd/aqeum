@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'core-web-auth',
+  displayName: 'shared-web-auth',
   preset: '../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/core-web/auth',
+  coverageDirectory: '../../../coverage/libs/shared-web/auth',
 };

@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dsych-org/core-web/auth": ["libs/core-web/auth/src/index.ts"]
+      "@dsych-org/shared-web/auth": ["libs/shared-web/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
