@@ -1,1 +1,1 @@
-export * from './lib/aqeum-web-feature-home';
+export * from './lib/home-page';

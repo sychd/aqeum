@@ -1,4 +1,4 @@
-import { useAuthService } from './auth.service';
+import { useAuthService } from '../auth.service';
 
 export function AuthPanel() {
   const authService = useAuthService();

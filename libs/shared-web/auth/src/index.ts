@@ -1,2 +1,2 @@
 export * from './lib/auth.service';
-export * from './lib/auth-panel';
+export * from './lib/components';

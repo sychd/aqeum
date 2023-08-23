@@ -18,6 +18,9 @@
       "@dsych-org/aqeum-web/feature/home": [
         "libs/aqeum-web/feature/home/src/index.ts"
       ],
+      "@dsych-org/aqeum-web/feature/landing": [
+        "libs/aqeum-web/feature/landing/src/index.ts"
+      ],
       "@dsych-org/aqeum-web/feature/profile": [
         "libs/aqeum-web/feature/profile/src/index.ts"
       ],
