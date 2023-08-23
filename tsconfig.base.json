@@ -33,7 +33,9 @@
       "@dsych-org/aqeum-web/feature/profile": [
         "libs/aqeum-web/feature/profile/src/index.ts"
       ],
-      "@dsych-org/shared-web/ui": ["libs/shared-web/ui/src/index.ts"]
+      "@dsych-org/shared-web/i18n": ["libs/shared-web/i18n/src/index.ts"],
+      "@dsych-org/shared-web/ui": ["libs/shared-web/ui/src/index.ts"],
+      "@dsych-org/shared-web/utils": ["libs/shared-web/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
