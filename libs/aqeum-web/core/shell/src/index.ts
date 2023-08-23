@@ -1,1 +1,1 @@
-export * from './lib/aqeum-web-core-shell';
+export * from './lib/shell';
