@@ -35,7 +35,6 @@
                 "sourceTag": "type:app",
                 "onlyDependOnLibsWithTags": [
                   "type:service",
-                  "type:service",
                   "type:feature",
                   "type:ui",
                   "type:util"
