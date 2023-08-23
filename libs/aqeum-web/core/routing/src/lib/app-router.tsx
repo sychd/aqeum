@@ -1,13 +1,21 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Shell } from './shell/shell';
-import { ProtectedRoute } from '@dsych-org/shared-web/auth';
 import { LandingPage } from '@dsych-org/aqeum-web/feature/landing';
+import { Shell } from '@dsych-org/aqeum-web/core/shell';
+import { ProtectedRoute } from '@dsych-org/aqeum-web/core/auth';
 
 const LazyHome = React.lazy(() =>
   import('@dsych-org/aqeum-web/feature/home').then(({ HomePage }) => ({
     default: HomePage,
   }))
+);
+
+const LazyProfile = React.lazy(() =>
+  import('@dsych-org/aqeum-web/feature/profile').then(
+    ({ AqeumWebFeatureProfile }) => ({
+      default: AqeumWebFeatureProfile,
+    })
+  )
 );
 
 const router = createBrowserRouter([
@@ -24,6 +32,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <LazyHome test={'Hello hi'} />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: '/profile',
+        element: (
+          <ProtectedRoute>
+            <LazyProfile />
           </ProtectedRoute>
         ),
       },

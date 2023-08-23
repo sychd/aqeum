@@ -1,4 +1,4 @@
-import { useAuthService } from '@dsych-org/shared-web/auth';
+import { useAuthService } from '@dsych-org/aqeum-web/core/auth';
 import { Navigate } from 'react-router-dom';
 import React from 'react';
 

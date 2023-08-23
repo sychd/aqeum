@@ -1,19 +1,15 @@
-import styles from './shell.module.scss';
 import { Link, Outlet } from 'react-router-dom';
-import { AuthPanel } from '@dsych-org/shared-web/auth';
+import { AuthPanel } from '@dsych-org/aqeum-web/core/auth';
 
-/* eslint-disable-next-line */
-export interface ShellProps {}
-
-export function Shell(props: ShellProps) {
+export function Shell() {
   return (
-    <div className={styles['container']}>
+    <div>
       <div>
         <AuthPanel />
         <nav>
           <Link to={'/home'}>Home</Link>
           <Link to={'/about'}>About</Link>
-        </nav>{' '}
+        </nav>
       </div>
       <h1>Welcome to Shell!</h1>
       <div style={{ backgroundColor: 'crimson', padding: 20 }}>
