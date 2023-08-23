@@ -15,6 +15,47 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "scope:aqeum-web",
+                "onlyDependOnLibsWithTags": [
+                  "scope:shared-web",
+                  "scope:aqeum-web"
+                ]
+              },
+              {
+                "sourceTag": "scope:shared-web",
+                "onlyDependOnLibsWithTags": ["scope:shared-web"]
+              },
+              {
+                "sourceTag": "scope:e2e",
+                "onlyDependOnLibsWithTags": ["scope:e2e", "scope:utils"]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": [
+                  "type:service",
+                  "type:service",
+                  "type:feature",
+                  "type:ui",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:util", "type:service"]
+              },
+              {
+                "sourceTag": "type:service",
+                "onlyDependOnLibsWithTags": ["type:util", "type:service"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:util", "type:ui"]
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": ["type:util"]
               }
             ]
           }

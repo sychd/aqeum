@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared-web/utils/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["type:util", "scope:shared-web"],
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",

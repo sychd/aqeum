@@ -3,7 +3,7 @@
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/aqeum-web/core/shell/src",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:aqeum-web", "type:ui"],
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",
