@@ -2,9 +2,10 @@
 import styles from './app.module.scss';
 import { AppRouter } from '@dsych-org/aqeum-web/core/routing';
 import { ErrorBoundary } from '@dsych-org/shared-web/ui';
-import { initializeI18n } from '@dsych-org/shared-web/i18n';
+import { i18nInstance } from '@dsych-org/shared-web/i18n';
 
-initializeI18n();
+i18nInstance();
+
 export function App() {
   return (
     <ErrorBoundary>

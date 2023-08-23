@@ -17,7 +17,12 @@
         "tsConfig": "apps/aqeum-web/tsconfig.app.json",
         "assets": [
           "apps/aqeum-web/src/favicon.ico",
-          "apps/aqeum-web/src/assets"
+          "apps/aqeum-web/src/assets",
+          {
+            "glob": "**/*",
+            "input": "libs/shared-web/i18n/src/lib/locales",
+            "output": "./assets/locales"
+          }
         ],
         "styles": ["apps/aqeum-web/src/styles.scss"],
         "scripts": [],
