@@ -1,6 +1,6 @@
 import styles from './home-page.module.scss';
 import { Link } from 'react-router-dom';
-import { FancyBox } from '@dsych-org/shared-web/ui';
+import { FancyBox } from '@dream-org/shared-web/ui';
 import { useTranslation } from 'react-i18next';
 
 /* eslint-disable-next-line */

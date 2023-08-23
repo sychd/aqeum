@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import { AuthPanel } from '@dsych-org/aqeum-web/core/auth';
+import { AuthPanel } from '@dream-org/aqeum-web/core/auth';
 
 export function Shell() {
   return (

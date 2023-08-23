@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
-import { isDevelopment } from '@dsych-org/shared-web/utils';
+import { isDevelopment } from '@dream-org/shared-web/utils';
 
 /**
  * TODO: add namespaces handling: https://www.i18next.com/principles/namespaces

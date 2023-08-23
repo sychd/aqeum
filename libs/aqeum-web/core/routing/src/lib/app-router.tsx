@@ -1,17 +1,17 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { LandingPage } from '@dsych-org/aqeum-web/feature/landing';
-import { Shell } from '@dsych-org/aqeum-web/core/shell';
-import { ProtectedRoute } from '@dsych-org/aqeum-web/core/auth';
+import { LandingPage } from '@dream-org/aqeum-web/feature/landing';
+import { Shell } from '@dream-org/aqeum-web/core/shell';
+import { ProtectedRoute } from '@dream-org/aqeum-web/core/auth';
 
 const LazyHome = React.lazy(() =>
-  import('@dsych-org/aqeum-web/feature/home').then(({ HomePage }) => ({
+  import('@dream-org/aqeum-web/feature/home').then(({ HomePage }) => ({
     default: HomePage,
   }))
 );
 
 const LazyProfile = React.lazy(() =>
-  import('@dsych-org/aqeum-web/feature/profile').then(
+  import('@dream-org/aqeum-web/feature/profile').then(
     ({ AqeumWebFeatureProfile }) => ({
       default: AqeumWebFeatureProfile,
     })

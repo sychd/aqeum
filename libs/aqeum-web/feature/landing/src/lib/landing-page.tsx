@@ -1,4 +1,4 @@
-import { useAuthService } from '@dsych-org/aqeum-web/core/auth';
+import { useAuthService } from '@dream-org/aqeum-web/core/auth';
 import { Navigate } from 'react-router-dom';
 import React from 'react';
 
