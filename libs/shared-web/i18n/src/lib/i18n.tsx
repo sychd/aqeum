@@ -4,6 +4,10 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import { isDevelopment } from '@dsych-org/shared-web/utils';
 
+/**
+ * TODO: add namespaces handling: https://www.i18next.com/principles/namespaces
+ * We can have common preload. And each other page/component should load its NS on demand
+ */
 async function initializeI18n() {
   return await i18n
     // detect user language
