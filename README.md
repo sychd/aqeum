@@ -12,6 +12,7 @@ Call `i18nInstance()` in an app for its initialization.
 Call `i18nInstance()` in libs to load required namespaces (TBD).
 
 To connect i18n translations to an app you should update `project.json` of this app, `assets` section with the following:
+Outdated for webpack:
 ```
 "assets": [
           ...
@@ -21,6 +22,18 @@ To connect i18n translations to an app you should update `project.json` of this 
             "output": "./assets/locales"
           }
         ],
+```
+
+Actual for vite:
+In `vite.config.ts` add:
+```
+viteStaticCopy({
+      targets: [
+        {
+          src: '../../libs/shared-web/i18n/src/lib/locales',
+          dest: 'assets'
+        }
+      ]
 ```
 ## Apps & Libs alignment
 
