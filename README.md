@@ -49,7 +49,7 @@ Please, try to go with nested folders approach. Folder name should correlate wit
 -  `type:util`
 
 Types are pretty aligned with standard NX notation. `type:service` is a special type of `type:util` with the difference that util is expected to be rather pure in comparison to a service.
-Service can provide a data layer, configurations, specific components related to that, etc.
+Service can provide a data layer, configurations, specific components/wrappers/providers if it makes sense, etc.
 
 If service consists only from UI component(s) but still has a dependency on some external service(s) - it should be a `type:service` (or it can also be a `type:feature`).
 

@@ -18,9 +18,6 @@
       "@dream-org/aqeum-web/core/auth": [
         "libs/aqeum-web/core/auth/src/index.ts"
       ],
-      "@dream-org/aqeum-web/core/routing": [
-        "libs/aqeum-web/core/routing/src/index.ts"
-      ],
       "@dream-org/aqeum-web/core/shell": [
         "libs/aqeum-web/core/shell/src/index.ts"
       ],
