@@ -24,7 +24,7 @@
             "output": "./assets/locales"
           }
         ],
-        "styles": ["apps/aqeum-web/src/styles.scss"],
+        "styles": ["apps/aqeum-web/src/styles.css"],
         "scripts": [],
         "isolatedConfig": true,
         "webpackConfig": "apps/aqeum-web/webpack.config.js"
