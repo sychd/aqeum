@@ -46,7 +46,7 @@ If service consists only from UI component(s) but still has a dependency on some
 -   `shared-web`
 
 
-## File puprose & naming convention
+## File types & naming convention
 
 We can outline next specific types of files:
 - component `<component-name>.tsx`;
@@ -60,6 +60,17 @@ We can outline next specific types of files:
 In case it makes sense to have several files in the same folder, it is good to omit suffix and put files in a folder with a name that meets sufix.
 
 
-## Purpose
-- service: TBD
-- ...
+### File Purpose
+- #### Component
+  In general, component should not contain any heavy logic, API calls, etc. All this stuff should be encapsulated inside **services** and/or **utils**.
+- ##### Service
+  Service file should keep any kind of logic and export, mostly, hooks, that are consumed by components.
+  It should be a facade for components and interact with **api**, **store** and sometimes **utils**.
+  - ##### Api
+    Special type of service that should cover plain API interaction only
+  - ##### Store
+    Special type of service that should cover work with state only
+- #### Types, Constants, Utils
+  They are pretty self-explanatory.
+
+Of course, it is possible to go beyond this agreement if it makes sense.
